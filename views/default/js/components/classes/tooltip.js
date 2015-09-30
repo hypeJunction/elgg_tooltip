@@ -15,6 +15,7 @@ define(['elgg', 'jquery', 'tooltipster'], function (elgg, $) {
 					$.extend(options, elem_options);
 					if (options.target) {
 						options.content = $(options.target).html();
+						options.contentAsHTML = true;
 					}
 					var inst = $(this).tooltipster(options);
 					$(this).data('tooltipReady', true);
