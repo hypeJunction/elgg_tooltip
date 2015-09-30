@@ -1,0 +1,20 @@
+{
+	"name": "hypejunction/elgg_tooltip",
+	"type": "elgg-plugin",
+	"description": "Tooltip for Elgg",
+	"homepage": "http://hypejunction.com",
+	"keywords": [
+		"elgg", "plugin", "ui", "tooltip"
+	],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Ismayil Khayredinov",
+			"email": "info@hypejunction.com"
+		}
+	],
+	"require-dev": {
+		"composer/installers": "1.*"
+	}
+}
+
