@@ -11,7 +11,6 @@ if (!$text || !$content) {
 	return;
 }
 
-elgg_load_css('components/tooltip');
 elgg_require_js('components/tooltip');
 
 $id = md5($content);

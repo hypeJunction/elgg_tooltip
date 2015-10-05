@@ -15,11 +15,10 @@ elgg_register_event_handler('init', 'system', 'elgg_tooltip_init');
  */
 function elgg_tooltip_init() {
 
-	elgg_define_js('tooltipster', array(
-		'src' => '/mod/elgg_tooltip/vendors/tooltipster/js/jquery.tooltipster.min.js',
-		'deps' => array('jquery'),
-	));
+	elgg_register_simplecache_view('components/tooltip.css');
+	elgg_extend_view('elgg.css', 'components/tooltip.css');
+	elgg_extend_view('admin.css', 'components/tooltip.css');
+	elgg_extend_view('elgg.js', 'components/tooltip.js');
 
-	elgg_register_css('components/tooltip', '/mod/elgg_tooltip/vendors/tooltipster/css/tooltipster.css');
-
+	elgg_extend_view('theme_sandbox/javascript', 'theme_sandbox/javascript/tooltip');
 }

@@ -1,7 +1,6 @@
 Tooltip for Elgg
 ================
-![Elgg 1.11](https://img.shields.io/badge/Elgg-1.11.x-orange.svg?style=flat-square)
-![Elgg 1.12](https://img.shields.io/badge/Elgg-1.12.x-orange.svg?style=flat-square)
+![Elgg 2.0](https://img.shields.io/badge/Elgg-2.0.x-orange.svg?style=flat-square)
 
 Tooltip component for Elgg
 
@@ -29,13 +28,9 @@ $tooltip = elgg_view('components/tooltip', array(
 ```
 
 Alternatively, you can just add `.elgg-tooltip` class and a `title="Some text"`
-attribute to any html element. For that to work, you must load css and js assets
-(this can be done globally if you use tooltips a lot):
+attribute to any html element:
 
 ```php
-
-elgg_load_css('components/tooltip');
-elgg_require_js('components/tooltip');
 
 echo elgg_view('output/url', array(
 	'text' => 'Click me',
@@ -44,4 +39,3 @@ echo elgg_view('output/url', array(
 	'title' => 'This will show in a tooltip',
 ));
 ```
-
