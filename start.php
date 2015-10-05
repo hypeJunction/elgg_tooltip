@@ -15,6 +15,10 @@ elgg_register_event_handler('init', 'system', 'elgg_tooltip_init');
  */
 function elgg_tooltip_init() {
 
-	elgg_extend_view('elgg/components.css', 'tooltipster.css');
+	elgg_register_simplecache_view('components/tooltip.css');
+	elgg_extend_view('elgg.css', 'components/tooltip.css');
+	elgg_extend_view('admin.css', 'components/tooltip.css');
 	elgg_extend_view('elgg.js', 'components/tooltip.js');
+
+	elgg_extend_view('theme_sandbox/javascript', 'theme_sandbox/javascript/tooltip');
 }
