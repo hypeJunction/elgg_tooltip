@@ -1,6 +1,7 @@
 <?php
 
-$path = file_exists(__DIR__ . '/vendor') ? __DIR__ : '';
+// check how the plugin was installed
+$path = file_exists(__DIR__ . '/vendor/autoload.php') ? __DIR__ : '';
 
 return array(
 	'default' => array(
